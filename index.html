@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+		<title>FCC Landing Page - Augmented Reality Consulting</title>
+	</head>
+	<body>
+		<header id="header">
+			<img src="https://www.eatlogos.com/alphabet_logos/png/vector_alphabet_a_r_letter_logo_inspiration_idea.png" alt="Page Logo" id="header-img" />
+			<h1>Augmented Reality Consulting</h1>
+			<nav id="nav-bar">
+				<!--These links should go to different sections of the web page.-->
+				<ul>
+					<li><a href="#about" class="nav-link">About AR</a></li>
+					<li><a href="#services" class="nav-link">Services</a></li>
+					<li><a href="#contact" class="nav-link">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div id="about">
+					<br />
+					<div id="about-card">
+						<h2>What Is Augmented Reality</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat consequat mauris, eget tempus nisi semper ut. Integer vel aliquet neque. Vestibulum cursus lectus erat, a consectetur eros commodo id. Donec ullamcorper lorem ut risus ultrices auctor. Nulla vitae massa ante. Ut finibus, quam a dictum laoreet, odio dui pretium dolor, vitae pharetra orci diam non neque. Maecenas vel elit non felis dapibus euismod dapibus ac urna. Vestibulum non scelerisque diam. Vestibulum pulvinar fermentum gravida. Nulla eget purus enim.</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div id="services">
+					<br />
+					<h2>Our Services</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi nunc, tincidunt eget euismod vitae, ultrices sit amet neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer non sapien non ligula hendrerit sollicitudin vel auctor neque. Etiam accumsan turpis diam, eget ornare eros congue nec. Nulla sit amet consequat sapien. Phasellus in venenatis purus. Vivamus facilisis justo nulla, quis vulputate nulla malesuada in. Donec finibus erat nec hendrerit volutpat. Praesent at convallis ligula, mattis lobortis neque. Nunc malesuada ex vel diam interdum, nec molestie sapien accumsan. <strong>Aliquam interdum maximus nunc,</strong> sed molestie nunc vulputate ut. Pellentesque sit amet dapibus ante, cursus luctus magna. Ut cursus dui et sem volutpat, non molestie sapien consectetur. Pellentesque non interdum quam. Integer pharetra, ligula quis fermentum laoreet, augue lorem ultrices mi, in cursus mauris mi a arcu. Mauris maximus nisi eget mauris mattis gravida.</p>
+					<p>Phasellus hendrerit consequat scelerisque. Aenean mollis ipsum mollis feugiat eleifend. Nunc eleifend mauris id dictum rutrum. Nullam eu tempor libero. Mauris in volutpat nisl. Aliquam sed nunc vitae augue luctus bibendum. Suspendisse eget porta metus. Praesent sagittis tempor iaculis. Integer vulputate purus id odio consequat, id varius mauris rhoncus.</p>
+				</div>
+				<br />
+				<div id="services-flex">	
+					<div class="card">
+						<h3>Virtual Onsite Consultations</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat consequat mauris, eget tempus nisi semper ut. Integer vel aliquet neque. Vestibulum cursus lectus erat, a consectetur eros commodo id. Donec ullamcorper lorem ut risus ultrices auctor. Nulla vitae massa ante. Ut finibus, quam a dictum laoreet. Aliquam sed nunc vitae augue luctus bibendum. Suspendisse eget porta metus.</p>
+						<p style="text-align:right; margin:.5em;">	<a href="">Details</a>	</p>
+					</div>
+					<div class="card">
+						<h3>Integrated Assistance</h3>
+						<p>Phasellus hendrerit consequat scelerisque. Aenean mollis ipsum mollis feugiat eleifend. Nunc eleifend mauris id dictum rutrum. Nullam eu tempor libero. Mauris in volutpat nisl. Aliquam sed nunc vitae augue luctus bibendum. Suspendisse eget porta metus. Praesent sagittis tempor iaculis. Integer vulputate purus id odio consequat, id varius mauris rhoncus. Integer vel aliquet neque. Vestibulum cursus lectus erat, a consectetur eros commodo id. </p>
+						<p style="text-align:right; margin:.5em;">	<a href="">Details</a>	</p>
+					</div>
+					<div>
+						<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2mY4nlzrUIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div id="contact">
+					<br />	
+					<h2>Contact Us</h2>
+					<form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+						<label for="name">Full Name</label>
+						<input type="text" id="name" name="name" size="30" placeholder="John Doe"/>
+						<label for="email">Email Address</label>
+						<input type="email" id="email" name="email" placeholder="doe@gmail.com" />
+						<label for="subject">How can we help you?</label>
+						<input type="text" id="subject" name="subject" placeholder="I need a consultation." />
+						<label for="message">Your Message</label>
+						<textarea id="message" name="message" rows="10" cols="100"></textarea>
+						<input type="submit" id="submit" />
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="footer">
+				<p><small>Copyright &copy; Dakforest 2020</small></p>
+			</div>
+		</footer>
+	</body>
+</html>

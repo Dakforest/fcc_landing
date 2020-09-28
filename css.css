@@ -1,0 +1,197 @@
+/* Developer Scaffolding. Delete upon completeion.
+* {
+	border: solid;
+	border-color: blue;
+	border-width: 1px;
+}
+*/
+
+:root {
+	/*Site Color Scheme*/
+	--logo-color: #0098da;
+	--main-color: #003BC4;
+	--main-dark: #01184E;
+	--main-light: #477EFD;
+	--light: #C9D9FF;
+	--dark: #000000;
+}
+
+* {margin:0;}
+
+body {
+	background-color: var(--dark);
+	color: var(--light);
+	font-family:Raleway;
+}
+
+h1, h2, h3, h4, h5, h6, a:link, a:visited  {
+	color:var(--main-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: .5em;
+	font-family:Epilogue;
+}
+
+h2 {font-size:30px;}
+h3 {font-size:22px;}
+
+a:hover, a:active {
+	color: var(--main-color);
+}
+
+a {
+	text-decoration:none;
+}
+
+p {
+	padding:.5em;
+	line-height:1.5;
+	font-size:18px;
+}
+
+/*Begin Header Styles*/
+header {
+	display: flex;
+	height: 3em;
+	background-color: var(--main-color);
+	background-image: linear-gradient(var(--main-color), var(--dark));
+	width: 100%;
+	position: sticky;
+	top:0;
+}
+
+header h1 {
+	color:var(--light);
+	padding:.25em;
+}
+
+#header-img {
+	height: 100%;
+}
+
+#nav-bar {flex-grow:1;}
+
+#nav-bar ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding: 0;
+	height:100%;
+}
+
+#nav-bar ul li {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 1.5em;
+	padding: .5em;
+}
+
+#nav-bar ul li a:link, #nav-bar ul li a:visited {
+	color:var(--light);
+}/*End Header Styles*/
+
+#services {
+	width: 90%;
+	margin: auto;
+	padding: 1.5em;
+}
+
+#services-flex {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2em;
+}
+
+#about {
+	height:23em;
+	background-image: url("https://arpost.co/wp-content/uploads/2020/01/Could-the-2020s-Be-the-Decade-When-AR-Glasses-Replace-the-Smartphone.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	margin-top: 1em;
+	display: flex;
+}
+
+#about-card, #contact {
+	width:50%;
+	margin:auto;
+	background-color: rgba(1, 24, 78, .85);
+	border-radius: 1em;
+	padding:1em;
+	text-align:center;
+}
+
+.card {
+	background-color: var(--main-dark);
+	border-radius: 1.5em;
+	padding: 1em; 
+	width: 22%;
+}
+
+.card h3 {text-align:center;}
+
+label, textarea {
+	display:block;
+	margin:.5em;
+}
+
+input, textarea {
+	width:90%;
+	margin: auto;
+	padding:1em;
+	border-radius:.5em;
+	border-style: none;
+	background-color:var(--light);
+	font-size:16px;
+}
+
+input[type="submit"]{
+	margin:1em;
+	background-color:var(--main-color);
+	color:var(--light);
+	font-family:Raleway;
+	font-weight:800;
+	font-size:22px;
+	padding:.5em;
+}
+
+footer {
+	height:3em;
+	background-color:var(--main-dark);
+	margin-top:1em;
+}
+
+footer p {text-align:right;}
+
+@media (max-width: 958px){
+	#services-flex {
+		flex-direction:column;
+		align-items:center;
+	}
+	.card {
+		width:80%;
+		margin-top:1em;
+	}
+	#video {margin-top:1em;}
+	#contact {width:75%;}
+	#header{flex-wrap:wrap;}
+	#nav-bar {
+		background-color:var(--dark);
+		margin-top:-2px;
+	}
+	#about {height:30em;}
+	#about-card {width:80%;}
+}
+
+@media (max-width: 580px){
+	/*
+		Tasks:
+		Build a hamburger menu.
+		Figure out how to dynamically resize the youtube video.
+	*/
+	#header{flex-wrap:nowrap;}
+	header h1 {font-size:22px;}
+	#nav-bar{display:none;}
+	#about{height:50em;}
+}
