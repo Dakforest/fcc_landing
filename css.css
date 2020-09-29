@@ -18,6 +18,8 @@
 
 * {margin:0;}
 
+html{scroll-padding-top:3em;}
+
 body {
 	background-color: var(--dark);
 	color: var(--light);
@@ -103,6 +105,11 @@ header h1 {
 	padding: 2em;
 }
 
+#video {
+	width:560px;
+	height:315px;
+}
+
 #about {
 	height:23em;
 	background-image: url("https://arpost.co/wp-content/uploads/2020/01/Could-the-2020s-Be-the-Decade-When-AR-Glasses-Replace-the-Smartphone.jpg");
@@ -164,6 +171,14 @@ footer {
 
 footer p {text-align:right;}
 
+@media (max-width: 1300px){
+	#services-flex {flex-wrap:wrap;}
+	.card{
+		width:40%;
+		margin-bottom:1em;
+	}
+}
+
 @media (max-width: 958px){
 	#services-flex {
 		flex-direction:column;
@@ -194,4 +209,8 @@ footer p {text-align:right;}
 	header h1 {font-size:22px;}
 	#nav-bar{display:none;}
 	#about{height:50em;}
+	#video {
+		width:370px;
+		height:208px;
+	}
 }
