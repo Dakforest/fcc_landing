@@ -6,10 +6,33 @@
 		<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
 		<title>FCC Landing Page - Augmented Reality Consulting</title>
 	</head>
-	<body>
+	<body onresize="resetMenu()">
 		<header id="header">
 			<img src="https://www.eatlogos.com/alphabet_logos/png/vector_alphabet_a_r_letter_logo_inspiration_idea.png" alt="Page Logo" id="header-img" />
 			<h1>Augmented Reality Consulting</h1>
+			<form id="hmbgr-menu">
+				<input type="checkbox" id="hmbgr" onclick="showMenu()" />
+				<label for="hmbgr" id="hamburger"><div></div></label>
+			</form>
+			<script>
+				function showMenu() {
+					var chk = document.getElementById("hmbgr");
+					var nav = document.getElementById("nav-bar");
+					
+					if (chk.checked == true) {
+						nav.style.display = "block";
+					} else {
+						nav.style.display = "none";
+					}
+				}
+				
+				function resetMenu(){
+					var nav = document.getElementById("nav-bar");
+					
+					nav.style.display = "";
+				}
+			</script>
+			
 			<nav id="nav-bar">
 				<!--These links should go to different sections of the web page.-->
 				<ul>
